@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>ad_wllppr</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200i,300" rel="stylesheet">
+        <style>
+            h1 {
+                text-align: center;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 200;
+                font-style: italic;
+                font-size: 50px;
+            }
+            p {
+                font-family: 'Source Sans Pro', sans-serif;
+                text-align: center;
+                font-size: 20px;
+                margin-top: -20px;
+                font-weight: 300;
+            }
+            #buttonDiv {
+                text-align: center;
+                margin-top: 30px;
+            }
+            button {
+                display: inline-block;
+                padding-bottom: 8px;
+                padding-top: 8px;
+                padding-right: 20px;
+                padding-left: 20px;
+                font-size: 22px;
+                margin-left: 10px;
+                margin-right: 10px;
+                border-radius: 10000px;
+                font-weight: 300;
+                border: none;
+                margin-bottom: 30px;
+                background-color: white;
+                font-family: 'Source Sans Pro', sans-serif;
+                outline: none;
+                cursor: pointer;
+                transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+            }
+            button:hover {
+                background-color: #E3E3E3;
+                transform: scale(1.03);
+            }
+            button:active {
+                background-color: #D3D3D3;
+                transform: scale(0.97);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ad_wllppr</h1>
+        <p>all the time a new wallpaper</p>
+        <canvas id="dibujo" class="name"></canvas>
+        <script src="canva.js"></script>
+        <div id="buttonDiv">
+                <button onclick="newOne ()">new one</button>
+                <a id="download" download="ad_wllppr.jpg" href="" onclick="download_img(this);"><button id="downloadImg">download</button></a>
+        </div>
+    </body>
+</html>
